@@ -6,6 +6,8 @@
 package ec.edu.intsuperior.vista;
 
 import ec.edu.intsuperior.controlador.Conexion;
+import ec.edu.intsuperior.controlador.Controlador;
+import ec.edu.intsuperior.modelo.Consultas;
 import java.sql.Connection;
 
 /**
@@ -14,8 +16,10 @@ import java.sql.Connection;
  */
 public class Aplicacion {
     public static void main(String[] args) {
-        Conexion.cerrarConexion();
-        System.out.println(Conexion.getMensaje());
+//        Consultas.insertar("pfrank","sdfghjk");
+        
+        Controlador controlador= new Controlador();
+        controlador.mostrarLoggin();
     }
     
 }
